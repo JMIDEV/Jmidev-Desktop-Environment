@@ -1,0 +1,57 @@
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="grid">
+
+            <div class="calculationdiv">
+
+                <div class="calculationinputdiv"><span class="calculationinput">_</span></div>
+                <div class="result"><span class="resulttextoutput">0</span></div>
+    
+            </div>
+
+            <button onclick="movecursor(-1)" class="calcbutton navigate leftnavigate">←</button>
+            <button onclick="movecursor(1)" class="calcbutton navigate rightnavigate">→</button>
+            <button class="calcbutton calculation pibutton">π</button>
+            <button onclick="delinput()" class="calcbutton navigate delnavigate">DEL</button>    
+            <button onclick="resetcalc()" class="calcbutton navigate acnavigate redded">AC</button>
+
+            <button class="calcbutton calculation number number7">7</button>
+            <button class="calcbutton calculation number number8">8</button>
+            <button class="calcbutton calculation number number9">9</button>
+            <button class="calcbutton calculation openparenthesis dimmed">(</button>
+            <button class="calcbutton calculation closeparenthesis dimmed">)</button>   
+
+            <button class="calcbutton calculation number number4">4</button>
+            <button class="calcbutton calculation number number5">5</button>
+            <button class="calcbutton calculation number number6">6</button>
+            <button class="calcbutton calculation multsign dimmed">*</button>
+            <button class="calcbutton calculation dividsign dimmed">/</button>
+
+            <button class="calcbutton calculation number number1">1</button>
+            <button class="calcbutton calculation number number2">2</button>
+            <button class="calcbutton calculation number number3">3</button>
+            <button class="calcbutton calculation plussign dimmed">+</button>
+            <button class="calcbutton calculation minusign dimmed">-</button>
+
+            <button class="calcbutton calculation number number0">0</button>
+            <button class="calcbutton calculation closeparenthesis">.</button>
+            <button class="calcbutton calculation closeparenthesis">Ans</button>
+            <button onclick="calculateresult();" class="calcbutton equal blued">=</button>
+
+        </div>
+
+    </body>
+
+    <script src="../../js/math.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="calculator.js"></script>
+
+</html>

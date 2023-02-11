@@ -1,0 +1,344 @@
+.windowspace{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+
+}
+
+@keyframes openwindow {
+    from {transform: scale(90%); opacity: 0;}
+    to {transform: scale(100%); opacity: 1;}
+}
+
+.window{
+
+    background-color: rgb(36, 36, 36);
+    border-radius: 15px;
+    width: 1300px;
+    height: 800px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    overflow: hidden;
+    pointer-events: all;
+    user-select: none;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.377);
+    color: white;
+    animation-name: openwindow;
+    animation-duration: 0.25s;
+    animation-timing-function: cubic-bezier(0, 0.14, 0.16, 1.53);
+
+}
+
+iframe{
+
+    user-select: none;
+
+}
+
+.windowtop{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    background: rgb(38, 38, 38);
+    justify-content:center;
+    line-height: 40px;
+
+}
+
+.windowcontent{
+
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.windowiframe{
+
+    width: 100%;
+    height: 100%;
+    border: 0px;
+
+}
+
+.windowtitle{
+
+    position: relative;
+    left: 45px;
+    pointer-events: none;
+    font-family: mainfont;
+    font-weight: bold;
+
+}
+
+.windowclose{
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+    background-image: url("../imgs/windows/close.svg");
+    background-size: 30px;
+    cursor: pointer;
+
+}
+
+.windowclose:hover{
+    
+    background-image: url("../imgs/windows/closehover.svg");
+    background-size: 30px;
+
+}
+
+.windowmaximize{
+
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+    background-image: url("../imgs/windows/maximize.svg");
+    background-size: 30px;
+    cursor: pointer;
+
+}
+
+.windowmaximize:hover{
+    
+    background-image: url("../imgs/windows/maximizehover.svg");
+    background-size: 30px;
+
+}
+
+.windowminimize{
+
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+    background-image: url("../imgs/windows/minimize.svg");
+    background-size: 30px;
+    cursor: pointer;
+
+}
+
+.windowminimize:hover{
+    
+    background-image: url("../imgs/windows/minimizehover.svg");
+    background-size: 30px;
+
+}
+
+.windowgoforward{
+
+    position: absolute;
+    top: 5px;
+    right: 110px;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+    background-image: url("../imgs/windows/goback.svg");
+    transform: scaleX(-1);
+    background-size: 30px;
+    cursor: pointer;
+
+}
+
+.windowgoforward:hover{
+
+    background-image: url("../imgs/windows/gobackhover.svg");
+    background-size: 30px;
+
+}
+
+.windowgoback{
+
+    position: absolute;
+    top: 5px;
+    right: 145px;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s;
+    background-image: url("../imgs/windows/goback.svg");
+    background-size: 30px;
+    cursor: pointer;
+
+}
+
+.windowgoback:hover{
+
+    background-image: url("../imgs/windows/gobackhover.svg");
+    background-size: 30px;
+
+}
+
+.windowfavicon{
+
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.resizer{
+
+    background: transparent;
+
+}
+
+#resizertop{
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    height: 5px;
+    cursor: n-resize;
+
+}
+
+#resizerbottom{
+
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    height: 5px;
+    cursor: s-resize;
+
+}
+
+#resizerleft{
+
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0px;
+    width: 5px;
+    cursor: w-resize;
+
+}
+
+#resizerright{
+
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 0px;
+    width: 5px;
+    cursor: e-resize;
+
+}
+
+#resizertopleft{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    cursor: nw-resize;
+
+}
+
+#resizertopright{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    cursor: ne-resize;
+
+}
+
+#resizerbottomleft{
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    cursor: sw-resize;
+
+}
+
+#resizerbottomright{
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    cursor: se-resize;
+
+}
+
+.movetopanel{
+
+    width: 50%;
+    height: calc(100% - 50px);
+    background: rgba(255, 255, 255, 0.137);
+    /*backdrop-filter: blur(10px);*/
+    pointer-events: none;
+    /*border-radius: 15px;*/
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.116);
+    
+}
+
+#movetopanelleft{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    transition: 0.2s;
+    opacity: 1;
+
+}
+
+#movetopanelright{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+    transition: 0.2s;
+    opacity: 1;
+
+}
+
+#movetopanelfull{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+    transition: 0.2s;
+    opacity: 1;
+    width: 100%;
+    height: calc(100% - 50px);
+    /*backdrop-filter: blur(5px);*/
+
+}

@@ -1,0 +1,14 @@
+{
+    
+    "name": "Calculator",
+    "version": "1.0",
+    "author": "JMIDEV",
+    "filetorun": "index.html",
+    "icon": "icon.svg",
+    "shortdescription": "A basic calculator.",
+    "description": "A basic calculator able of adding, substracting...",
+    "category": "Utilities",
+    "windowwidth": 380,
+    "windowheight": 500
+
+}

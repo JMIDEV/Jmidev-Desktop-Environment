@@ -1,0 +1,14 @@
+{
+    
+    "name": "Settings",
+    "version": "1.0",
+    "author": "JMIDEV",
+    "filetorun": "index.html",
+    "icon": "icon.svg",
+    "shortdescription": "An app for changing the settings of the environment.",
+    "description": "An app for changing the settings of the JMIDEV DESKTOP ENVIRONMENT.",
+    "category": "System",
+    "windowwidth": 1300,
+    "windowheight": 760
+
+}

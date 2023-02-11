@@ -1,0 +1,125 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/windows.css">
+        <link rel="stylesheet" href="styles/background.css">
+        <link rel="stylesheet" href="styles/taskbar.css">
+        <link rel="stylesheet" href="styles/startmenu.css">
+
+    </head>
+
+    <body>
+
+        <div class="warehouse" style="display:none">
+
+            <div class="window">
+
+                <div class="windowtop" ondblclick="windowfullscreen(this.parentElement)">
+
+                    <img class="windowfavicon">
+                    <span class="windowtitle">TEXT</span>
+                    <!--<div class="windowgoback" onclick="windowgoback(this.parentElement.parentElement)"></div>
+                    <div class="windowgoforward"></div>-->
+                    <div class="windowminimize" onclick="windowminimize(this.parentElement.parentElement)"></div>
+                    <div class="windowmaximize" onclick="windowfullscreen(this.parentElement.parentElement)"></div>
+                    <div class="windowclose" onclick="windowclose(this.parentElement.parentElement)"></div>
+
+                </div>
+                <div class="windowcontent">
+
+                    <iframe class="windowiframe" src=""></iframe>
+
+                </div>
+                <div class="resizers">
+                    <div class="resizer" id="resizertop"></div>
+                    <div class="resizer" id="resizerbottom"></div>
+                    <div class="resizer" id="resizerleft"></div>
+                    <div class="resizer" id="resizerright"></div>
+                    <div class="resizer" id="resizertopleft"></div>
+                    <div class="resizer" id="resizertopright"></div>
+                    <div class="resizer" id="resizerbottomleft"></div>
+                    <div class="resizer" id="resizerbottomright"></div>
+                </div>
+
+            </div>
+
+            <div class="openedapptaskbar" onclick="taskbariconwindowreorder(this)">
+
+                <div class="openedapptaskbar_bgcircle">
+
+                    <img src="">
+
+                </div>
+
+                <div class="openedapptaskbar_statecircle">
+
+                    
+
+                </div>
+
+            </div>
+
+            <div class="startmenuappcategory"><span></span><img src="imgs/startmenu/categoryarrow.svg"></div>
+
+            <div class="startmenuappopen"><img><span></span></div>
+            
+        </div>
+
+
+
+
+
+        <div class="background">
+            <img class="backgroundinsideimage" src="">
+        </div>
+        <div class="windowspace">
+            <div class="windowmovingindicators" style="position: absolute; top:0px; left:0px; width:100%; height:100%;">
+
+                <div class="movetopanel" id="movetopanelleft"></div>
+                <div class="movetopanel" id="movetopanelright"></div>
+                <div class="movetopanel" id="movetopanelfull"></div>
+
+            </div>
+        </div>
+        <div class="taskbarcont">
+
+            <div class="taskbarstartmenu" onclick="showtaskbar(!showingstartmenu);"></div>
+            
+            <div class="taskbaropened" onmousedown="showtaskbar(false);">
+
+                
+
+            </div>
+
+            <span class="taskbartime"></span>
+
+        </div>
+        <div class="startmenu">
+
+            <div class="startmenubox">
+
+                <div class="startmenuappscontainer">
+
+                    <div class="startmenuappcategories"></div>
+                    <div class="startmenuappselector"></div>
+
+                </div>
+
+            </div>
+
+            <div class="startmenuclosebg" onmousedown="showtaskbar(false);"></div>
+
+        </div>
+
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/windows.js"></script>
+    <script src="js/taskbar.js"></script>
+    <script src="js/startmenu.js"></script>
+    <script src="js/general.js"></script>
+
+</html>

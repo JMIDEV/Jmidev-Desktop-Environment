@@ -1,0 +1,27 @@
+{
+  "name": "jmidevdesktopenvironment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window":{
+
+    "title": "JMIDEV DESKTOP ENVIRONMENT",
+    "icon": "assets/jmidevdesktopenvironmenticon.png",
+    "toolbar": "true",
+    "kiosk": true,
+    "width": 480,
+    "height": 360,
+    "minwidth": 1280,
+    "minheight": 720,
+    "maxwidth": 3840,
+    "maxheight": 2160,
+    "position": "center"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

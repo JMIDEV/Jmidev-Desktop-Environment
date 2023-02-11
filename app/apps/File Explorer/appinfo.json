@@ -1,0 +1,14 @@
+{
+    
+    "name": "File Explorer",
+    "version": "1.0",
+    "author": "JMIDEV",
+    "filetorun": "index.html",
+    "icon": "icon.svg",
+    "shortdescription": "A file explorer for browsing your files.",
+    "description": "A file explorer for browsing, opening, and many other things with your files, on your hard drive, on your external drives...",
+    "category": "Utilities",
+    "windowwidth": 1055,
+    "windowheight": 715
+
+}

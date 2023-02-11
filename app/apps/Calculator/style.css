@@ -1,0 +1,144 @@
+@font-face {
+    font-family: mainfont;
+    src: url(../../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: calculator;
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+body{
+
+    background-color: rgb(29, 29, 29);
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+
+}
+
+
+.calculationdiv{
+
+    position: relative;
+    z-index: 0;
+    border-radius: 4vmin;
+    background: rgb(42, 42, 42);
+    color: white;
+    overflow: hidden;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+}
+
+.calculationinputdiv{
+
+    display: inline-block;
+    font-family: calculator;
+    position: absolute;
+    top: 1.2vmin;
+    left: 2vmin;
+    right: 2vmin;
+    height: 40%;
+    font-size: 6vh;
+    white-space: nowrap;
+
+}
+
+.result{
+
+    display: inline-block;
+    font-family: calculator;
+    position: absolute;
+    bottom: 1vmin;
+    left: 2vmin;
+    right: 2vmin;
+    height: 60%;
+    text-align: right;
+
+}
+
+.resulttextoutput{
+
+    vertical-align: bottom;
+    font-size: 9vh;
+
+}
+
+.calcbutton{
+
+    outline: none;
+    border: 0px solid transparent;
+    color: white;
+    font-family: mainfont;
+    background: rgb(49, 49, 49);
+    font-size: 5vmin;
+    border-radius: 4vmin;
+    cursor: pointer;
+    transition: 0.1s;
+    z-index: 1;
+    box-shadow: 0px 5px 20px #0000001c;
+    font-family: calculator;
+
+}
+
+.calcbutton:hover{
+
+    transform: scale(110%);
+    z-index: 2;
+    box-shadow: 0px 5px 40px #0000003a;
+    
+}
+
+.leftnavigate{
+
+    font-family: mainfont;
+
+}
+
+.rightnavigate{
+
+    font-family: mainfont;
+
+}
+
+.equal{
+
+    grid-column: span 2;
+
+}
+
+.blued{
+
+    background: rgb(23, 45, 68);
+
+}
+
+.redded{
+
+    background: rgb(68, 23, 23);
+
+}
+
+.dimmed{
+
+    background: rgb(36, 36, 36);
+
+}

@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="leftsidebarcontainer">
+
+            <div class="leftsidebar">
+
+                <div onclick="showsettingspage('wallpaper');" class="sidebarbutton wallpaperpagebutton"><img class="iconsettcategory" src="imgs/wallpaper.svg"><span>Wallpaper</span><img src="../../imgs/startmenu/categoryarrow.svg" class="showingsettcategoryindicator"></div>
+                <div onclick="showsettingspage('about');" class="sidebarbutton aboutpagebutton"><img class="iconsettcategory" src="imgs/about.svg"><span>About</span><img src="../../imgs/startmenu/categoryarrow.svg" class="showingsettcategoryindicator"></div>
+    
+            </div>
+
+        </div>
+
+        <div class="rightcontent">
+
+            <div class="settingspannel wallpapersettings">
+
+                <h1 class="settingstitle">Wallpaper:</h1>
+                <div class="wallpaperselectordiv">
+
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/leaves.jpg')"><img src="../../imgs/wallpapers/leaves.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/mountain.jpg')"><img src="../../imgs/wallpapers/mountain.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/shapes.jpg')"><img src="../../imgs/wallpapers/shapes.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/mountains.jpg')"><img src="../../imgs/wallpapers/mountains.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/paint.jpg')"><img src="../../imgs/wallpapers/paint.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/bluesquares.jpg')"><img src="../../imgs/wallpapers/bluesquares.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/yosemitepark.jpg')"><img src="../../imgs/wallpapers/yosemitepark.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/flower.jpg')"><img src="../../imgs/wallpapers/flower.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/flowers.jpg')"><img src="../../imgs/wallpapers/flowers.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/waves.jpg')"><img src="../../imgs/wallpapers/waves.jpg"></button>
+                    <button class="wallpaperselectorbutton" onclick="parent.changewallpaper('imgs/wallpapers/forest.jpg')"><img src="../../imgs/wallpapers/forest.jpg"></button>
+
+                </div>
+
+            </div>
+            <div class="settingspannel aboutsettings">
+
+                <h1 class="settingstitle">About:</h1>
+                <div class="aboutcenterdiv">
+                
+                    <img class="logoabout" src="../../imgs/logo/jmidevdesktopenvironmentlogo.svg">
+                    <br>
+                    <span class="versionabout"></span>
+                    <div class="infoabout">
+
+                        <div class="aboutinfosector os">
+                            <div class="aboutinfosectorname">Underlying OS</div>
+                            <div class="aboutinfosectorvalue">VALUE</div>
+                        </div>
+                        <div class="aboutinfosector cpu">
+                            <div class="aboutinfosectorname">CPU model</div>
+                            <div class="aboutinfosectorvalue">VALUE</div>
+                        </div>
+                        <div class="aboutinfosector cpucores">
+                            <div class="aboutinfosectorname">Number of CPU CORES</div>
+                            <div class="aboutinfosectorvalue">VALUE</div>
+                        </div>
+                        <div class="aboutinfosector ram">
+                            <div class="aboutinfosectorname">RAM amount</div>
+                            <div class="aboutinfosectorvalue">VALUE</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <script src="settings.js"></script>
+
+</html>

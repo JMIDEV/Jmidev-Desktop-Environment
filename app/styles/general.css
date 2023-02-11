@@ -1,0 +1,12 @@
+@font-face {
+    font-family: mainfont;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
