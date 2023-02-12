@@ -3,10 +3,19 @@ const path = require('path');
 
 var currentdirectory;
 var currentfoldershowing = [];
+var directorieshistory = [];
+var cursorplaceinhistory = 0;
 
-function loaddirectory(addresspath){
+function loaddirectory(addresspath, removefutureentriesinhistory){
 
-    currentdirectory = addresspath;
+    if(removefutureentriesinhistory){
+
+        currentdirectory = addresspath;
+        directorieshistory.splice(cursorplaceinhistory, 0, currentdirectory);
+        cursorplaceinhistory ++;
+        directorieshistory.splice(cursorplaceinhistory, directorieshistory.length);
+
+    }
 
     var foldercontentdiv = document.querySelector(".foldercontentdiv");
     foldercontentdiv.innerHTML = "";
@@ -86,7 +95,7 @@ function loaddirectory(addresspath){
 
         if(item[3] == "jmidev__folder"){
 
-            newitemadress.onclick = function(){loaddirectory(item[1])};
+            newitemadress.onclick = function(){loaddirectory(item[1], true)};
 
         }
 
@@ -97,10 +106,32 @@ function loaddirectory(addresspath){
 
 }
 
-function goUp(){
+function goBack(){
 
-    loaddirectory(path.dirname(currentdirectory));
+    if(cursorplaceinhistory > 1){
+
+        cursorplaceinhistory --;
+        loaddirectory(directorieshistory[cursorplaceinhistory-1], false);
+
+    }
 
 }
 
-loaddirectory("C:/Users/josem/Desktop/test");
+function goForward(){
+
+    if(cursorplaceinhistory < directorieshistory.length){
+
+        loaddirectory(directorieshistory[cursorplaceinhistory], false);
+        cursorplaceinhistory++;
+
+    }
+
+}
+
+function goUp(){
+
+    loaddirectory(path.dirname(currentdirectory), true);
+
+}
+
+loaddirectory("C:/Users/josem/Desktop/test", true);
