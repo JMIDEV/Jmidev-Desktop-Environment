@@ -1,4 +1,4 @@
-var jmidevDEversion = "0.1.0";
+var jmidevDEversion = "DEV";
 var currentuserrunning = "systemtestuser";
 
 window.addEventListener('load', function () {
