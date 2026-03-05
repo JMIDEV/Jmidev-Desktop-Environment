@@ -1,4 +1,4 @@
-#JMIDEV Desktop Environment
+# JMIDEV Desktop Environment
 
 A desktop environment/program based and focused on web technologies and nodejs. Runs using NW.js
 
