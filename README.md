@@ -8,4 +8,4 @@ This project was left unfinished back in 2023.
 
 Here is a video demonstration on YouTube to show how it works:
 
-[![Watch the video](https://img.youtube.com/vi/kC25HAHFg3A/hqdefault.jpg)](https://www.youtube.com/embed/kC25HAHFg3A)
+[![Watch the video](https://img.youtube.com/vi/kC25HAHFg3A/hqdefault.jpg)](https://youtu.be/kC25HAHFg3A)
