@@ -134,4 +134,4 @@ function goUp(){
 
 }
 
-loaddirectory("C:/Users/josem/Desktop/test", true);
+loaddirectory("DIRECTORIO", true);
